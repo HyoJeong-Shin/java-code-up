@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 
 public class MouseDraggingFrame extends JFrame {
 	public MouseDraggingFrame() {
-		setTitle("�巡�뵿�� YELLOW");		
+		setTitle("드래깅동안 YELLOW");		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		Container c = getContentPane();

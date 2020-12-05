@@ -19,24 +19,24 @@ public class GridTest extends JFrame {
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout());	
 		
-		// BorderLayout.north�� �ش��ϴ� �г� ����
+		// BorderLayout.north에 해당하는 패널 생성
 		JPanel p1 = new JPanel();
 		
 		p1.setLayout(new FlowLayout());
-		p1.add(new JLabel("�л� ���� �Է�"));
+		p1.add(new JLabel("학생 정보 입력"));
 		
 		c.add(p1, BorderLayout.NORTH);
 		
 		
-		// BorderLayout.center�� �ش��ϴ� �г� ����
+		// BorderLayout.center에 해당하는 패널 생성
 		JPanel p2 = new JPanel();
 		
 		p2.setLayout(new GridLayout(5, 4, 3, 3));
 		
-		p2.add(new JLabel("�̸�"));
-		p2.add(new JLabel("�й�"));
-		p2.add(new JLabel("�а�"));
-		p2.add(new JLabel("����ó"));
+		p2.add(new JLabel("이름"));
+		p2.add(new JLabel("학번"));
+		p2.add(new JLabel("학과"));
+		p2.add(new JLabel("연락처"));
 		
 		for(int i=1; i<=16; i++)
 			p2.add(new JTextField(""));
@@ -44,13 +44,13 @@ public class GridTest extends JFrame {
 		c.add(p2, BorderLayout.CENTER);
 		
 		
-		// BorderLayout.south�� �ش��ϴ� �г� ����
+		// BorderLayout.south에 해당하는 패널 생성
 		JPanel p3 = new JPanel();
 		
 		p3.setLayout(new FlowLayout());
 
-		p3.add(new JButton("�߰�"));
-		p3.add(new JButton("���"));
+		p3.add(new JButton("추가"));
+		p3.add(new JButton("취소"));
 		
 		c.add(p3, BorderLayout.SOUTH);
 			
